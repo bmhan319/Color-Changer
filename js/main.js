@@ -7,6 +7,7 @@ function changeColor() {
   let gValue = Math.floor(Math.random(0,1) * 256);
   let bValue = Math.floor(Math.random(0,1) * 256);
   let randomColor = "background-color:RGB(" + rValue + "," + gValue + "," + bValue + ")";
+  console.log(randomColor);
   
   COLORBOX.setAttribute('style', randomColor);
 }
