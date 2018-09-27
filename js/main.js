@@ -23,10 +23,12 @@ function changeColor() {
   NEWHEXCOLOR.innerHTML="The HEX value is: " + hexValue;
   
   //Change Text Color Depending on BG Color Value
-  if ( (rValue >= 200 && gValue >= 200) ||
+  if ( (rValue >= 1 && gValue >= 200 && bValue >= 10) ||
+       (rValue >= 150 && gValue >= 150 && bValue >= 200) ||
+       (rValue >= 200 && gValue >= 150 && bValue >= 150) ||
+       (rValue >= 200 && gValue >= 200) ||
        (rValue >= 200 && bValue >= 200) ||
        (gValue >= 200 && bValue >= 200)  ) {
-    console.log("hi");
     TEXT.setAttribute('class', 'reverse');
     NEWRGBCOLOR.setAttribute('class', 'reverse');
     NEWHEXCOLOR.setAttribute('class', 'reverse');
