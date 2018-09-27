@@ -1,3 +1,6 @@
+//Random Color Changer
+//Idea from https://www.udemy.com/17-complete-javascript-projects-explained-step-by-step/
+
 const COLORBOX = document.querySelector('.color-box');
 const BUTTON = document.querySelector('.button');
 const NEWRGBCOLOR = document.querySelector('.new-rgb-color');
