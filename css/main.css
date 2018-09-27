@@ -36,7 +36,7 @@ body {
 
 .color-box .reverse {
   color: black;
-  text-shadow: 1px 1px 1px #eee;
+  text-shadow: 1px 0px 1px #ccc;
   font-size: 1.1rem;
 }
 
