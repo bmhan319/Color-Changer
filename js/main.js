@@ -2,6 +2,7 @@ const COLORBOX = document.querySelector('.color-box');
 const BUTTON = document.querySelector('.button');
 const NEWRGBCOLOR = document.querySelector('.new-rgb-color');
 const NEWHEXCOLOR = document.querySelector('.new-hex-color');
+const TEXT = document.querySelector('.text');
 
 
 function changeColor() {
@@ -20,8 +21,22 @@ function changeColor() {
   //Converts RGB to HEX and Displays HEX Values for each color
   let hexValue = (rgbToHex(rValue, gValue, bValue)).toUpperCase();
   NEWHEXCOLOR.innerHTML="The HEX value is: " + hexValue;
-}
-
+  
+  //Change Text Color Depending on BG Color Value
+  if ( (rValue >= 200 && gValue >= 200) ||
+       (rValue >= 200 && bValue >= 200) ||
+       (gValue >= 200 && bValue >= 200)  ) {
+    console.log("hi");
+    TEXT.setAttribute('class', 'reverse');
+    NEWRGBCOLOR.setAttribute('class', 'reverse');
+    NEWHEXCOLOR.setAttribute('class', 'reverse');
+  
+  } else {
+    TEXT.setAttribute('class', 'text');
+    NEWRGBCOLOR.setAttribute('class', 'text');
+    NEWHEXCOLOR.setAttribute('class', 'text');
+  }
+};
 
 
 

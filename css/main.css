@@ -28,9 +28,15 @@ body {
   padding: 0 40px;
 }
 
-.color-box p {
+.color-box .text {
   color: #fff;
   text-shadow: 1px 1px 1px #333;
+  font-size: 1.1rem;
+}
+
+.color-box .reverse {
+  color: black;
+  text-shadow: 1px 1px 1px #eee;
   font-size: 1.1rem;
 }
 
